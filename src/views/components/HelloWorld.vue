@@ -8,11 +8,13 @@
         >vue-cli documentation</a
       >.
     </p>
+    <button @click="submit(2)">点击</button>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { Options, Vue } from "vue-class-component";
+import { emit } from "@/hooks/class-component-decorator";
 
 @Options({
   props: {
@@ -20,7 +22,10 @@ import { Options, Vue } from "vue-class-component";
   }
 })
 export default class HelloWorld extends Vue {
-  msg!: string;
+  @emit
+  submit(value) {
+    return value++;
+  }
 }
 </script>
 

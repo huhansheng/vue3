@@ -1,4 +1,6 @@
 # vue3
+See [vue3初试总结](http://note.youdao.com/noteshare?id=7a08be0fc9f6aae86585f14cb7f68548&sub=0552C2764DA943F9AF0E8C2ADD501358).
+
 
 ## Project setup
 ```
@@ -32,3 +34,4 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+

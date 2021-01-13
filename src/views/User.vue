@@ -3,7 +3,7 @@ import { Vue, Options } from "vue-class-component";
 import HelloWorld from "@/components/HelloWorld.vue";
 
 // class + jsx写法
-// Options渲染空白 Options()渲染出来，没文档说明??
+// Options空白 需要Options()，没文档说明??
 @Options()
 export default class Counter extends Vue {
   count = 0;

@@ -27,7 +27,7 @@ const routes: Array<RouteRecordRaw> = [
     path: "/user",
     name: "User",
     component: User
-  },
+  }
 ];
 
 const router = createRouter({

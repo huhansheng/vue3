@@ -18,7 +18,10 @@ export default createStore({
   actions: {
     async getUserInfo({ commit }, payload) {
       const data = await getUserInfoApi(payload);
-      commit(SAVE_USER_INFO, data);
+      if(data.result === 0) {
+        const res = data.result_rows;
+        commit(SAVE_USER_INFO, res);
+      }
     }
   },
   modules: {}

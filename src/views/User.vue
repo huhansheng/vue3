@@ -1,12 +1,11 @@
 <script>
 import { Vue, Options } from "vue-class-component";
-import { mapState, mapMutations, mapActions } from "vuex";
+import { mapState, mapActions } from "vuex";
 import HelloWorld from "@/components/HelloWorld.vue";
 
 // class + jsx写法
-// Options空白 需要Options()，没文档说明??
 @Options({
-  computed: mapState("user"),
+  computed: mapState(["user"]),
   methods: mapActions(["getUserInfo"])
 })
 export default class Counter extends Vue {
@@ -14,7 +13,7 @@ export default class Counter extends Vue {
 
   // 生命周期
   mounted() {
-    console.log("开始");
+    console.log("开始" , this.user);
   }
   handleIncrement() {
     this.count++;
@@ -29,6 +28,7 @@ export default class Counter extends Vue {
         <button onClick={this.handleIncrement}>increment</button>
         <HelloWorld msg="I am ok" />
         <button onClick={this.queryUserInfo}>请求</button>
+        <p>{this.user.name}</p>
       </div>
     );
   }

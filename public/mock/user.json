@@ -1,0 +1,23 @@
+{
+    "result": 0,
+    "system": {
+        "redirect": 0,
+        "trace_id": "AC1002441594799692668150801271",
+        "time_stamp": 1594799692,
+        "session_id": "p1jfmie3mlqugoei3u1s32c591",
+        "new_version": "3.1.0",
+        "uid": 3213747,
+        "token_id": "2QWIYjGTWoa4Hql59KbXOgcJMfK9PbNp1d3FjV/fag5dRUsaO9bq2XDRjVgZEvUD/Bt2NcLO9pu7LZrOTHBShQ==",
+        "need_login": 0,
+        "auth_status": 0,
+        "email": ""
+    },
+    "data": {
+        "result": 0,
+        "result_rows": {
+            "name": "handsome"
+        },
+        "res_info": "ok"
+    },
+    "res_info": "ok"
+}

@@ -13,7 +13,7 @@ export default class Counter extends Vue {
 
   // 生命周期
   mounted() {
-    console.log("开始" , this.user);
+    console.log("开始 ", this.user);
   }
   handleIncrement() {
     this.count++;

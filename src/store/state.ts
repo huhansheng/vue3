@@ -1,9 +1,10 @@
 const state = {
   user: {
-    id: "",
-    name: "",
-    account: ""
-  }
-};
+    id: '',
+    name: '',
+    account: ''
+  },
+  materialList: []
+}
 
-export default state;
+export default state

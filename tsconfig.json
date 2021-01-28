@@ -12,6 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "strictPropertyInitialization": true,
     "noImplicitAny": false,
     "types": [
       "webpack-env",
@@ -26,7 +27,8 @@
       "esnext",
       "dom",
       "dom.iterable",
-      "scripthost"
+      "scripthost",
+      "es2015"
     ]
   },
   "include": [

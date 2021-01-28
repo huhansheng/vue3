@@ -1,5 +1,8 @@
 export default {
-  setUserInfo(state, action) {
-    state.user = action || {};
+  setUserInfo (state, action: object): void {
+    state.user = action
+  },
+  setMaterialList (state, action: Array<object>): void {
+    state.materialList = action
   }
-};
+}

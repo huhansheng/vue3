@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import { Options, Vue } from "vue-class-component";
-import { emit } from "@/hooks/class-component-decorator";
+import { Options, Vue } from 'vue-class-component'
+import { emit } from '@/hooks/class-component-decorator'
 
 @Options({
   props: {
@@ -23,8 +23,8 @@ import { emit } from "@/hooks/class-component-decorator";
 })
 export default class HelloWorld extends Vue {
   @emit
-  submit(value) {
-    return value++;
+  submit (value) {
+    return value++
   }
 }
 </script>
